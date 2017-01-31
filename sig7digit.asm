@@ -57,26 +57,3 @@ exit
 					BX		lr
 
 					.end
-
-
-					 ;PUSH	{lr}
-
-					  ;Always show 01:23 on 7-segment display
-					  ;CHANGE THE CODE
-					 ;LDR		r0, code
-					 ;MOV		r1, #10111111b
-					 ;STRB	r1, [r0, #3]
-					 ;MOV		r1, #10000110b
-					 ;STRB	r1, [r0, #2]
-					 ;MOV		r1, #11011011b
-					 ;STRB	r1, [r0, #1]
-					 ;MOV		r1, #01001111b
-					 ;STRB	r1, [r0, #0]
-
-					 ;; Call seg7Update(code)
-					 ;BL		seg7Update
-
-					 ;POP		{lr}
-					 ;BX 		lr
-
-					 ;.end
