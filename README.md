@@ -1,2 +1,3 @@
 # LaunchPadInfraredRemote
-A library to use an infrared remote to control a seven segment display and buzzer as a multi-purpose, wireless timer
+An infrared remote-controlled combination stopwatch and timer for the TI Launchpad. It uses the Grove seven-segment display, buzzer, and an infrared receiver as peripherals. Supports separate mode switch, delete, and context-sensitive OKAY/PAUSE command, and of course, all numbers on the remote. The device does not support all remotes. In fact, about 60% of the work of this project involved figuring out how to decode the unique pulse sequences mapped to each key on the remote, and then using the general purpose timer on the Launchpad to generate interrupts when the IR receiver reads a falling edge. Note: the buzzer driver, `buzzer.asm`, is written in ARM assembly. The rest of the code is written in C. 
+
